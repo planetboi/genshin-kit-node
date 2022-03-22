@@ -15,7 +15,7 @@ export async function getGachaIndex(): Promise<OfficialGachaIndex[]> {
 }
 
 export async function getGachaData(id: string): Promise<OfficialGachaPool> {
-  return (await axios.get(`${API_ENDPOINT}/${id}/zh-cn.json`)).data
+  return (await axios.get(`${API_ENDPOINT}/${id}/en-us.json`)).data
 }
 
 export async function getOfficialGachaPool(
